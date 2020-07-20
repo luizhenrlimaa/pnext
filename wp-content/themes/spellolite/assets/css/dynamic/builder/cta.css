@@ -1,0 +1,16 @@
+#tm_builder_outer_content .tm_pb_promo h2{
+	font-size: @font_size($h2_font_size, multiple, ceil, 0.6)px;
+}
+@media (min-width: 992px) {
+	#tm_builder_outer_content .tm_pb_promo h2 { font-size: $h2_font_size{px}; }
+}
+
+#tm_builder_outer_content .tm_pb_button.tm_pb_promo_button:hover{
+	background-color: $regular_accent_color_2;
+	border-color: $regular_accent_color_2;
+}
+
+#tm_builder_outer_content .tm_pb_button.tm_pb_promo_button:after,
+#tm_builder_outer_content .tm_pb_button.tm_pb_promo_button:hover:after{
+	color: $invert_link_color;
+}

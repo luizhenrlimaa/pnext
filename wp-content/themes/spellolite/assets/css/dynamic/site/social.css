@@ -1,0 +1,25 @@
+/* #Social */
+.social-list {}
+
+/* #Social (invert scheme) */
+.invert .social-list {}
+
+.site-footer .social-list .menu-item a {
+	color: $regular_accent_color_1;
+	border-color: $regular_accent_color_1;
+}
+.site-footer .social-list .menu-item a:hover {
+	color: $invert_accent_color_1;
+	background-color: $regular_accent_color_1;
+}
+
+.site-footer .invert .social-list .menu-item a,
+.widget-subscribe .social-list .menu-item a {
+	color: $invert_accent_color_1;
+	border-color: $invert_accent_color_1;
+}
+.site-footer .invert .social-list .menu-item a:hover,
+.widget-subscribe .social-list .menu-item a:hover  {
+	color: $regular_accent_color_2;;
+	background-color: $invert_accent_color_1;
+}

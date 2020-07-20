@@ -1,0 +1,39 @@
+.isStuck {
+	@include media-breakpoint-up(md) {
+		position: fixed !important;
+		z-index: 1000;
+		margin: 0 !important;
+		transform: none;
+
+		&#main-menu {
+			right: 0;
+			left: 0;
+			padding-top: 15px !important;
+			padding-bottom: 15px !important;
+			width: 100%;
+			justify-content: center;
+			background: $color__white;
+			box-shadow: $box__shadow;
+		}
+
+		.invert &#main-menu {
+			box-shadow: none;
+		}
+
+		&.vertical-menu-toggle {
+			top: 30px !important;
+		}
+	}
+}
+
+.pseudoStickyBlock {
+	@include media-breakpoint-down(sm) {
+		display: none !important;
+	}
+	width: 100%;
+	margin: 0 !important;
+
+	.isStuck ~ & {
+		width: auto;
+	}
+}

@@ -1,0 +1,66 @@
+/* #Button Appearance Styles (regular scheme) */
+.link {
+	color: $regular_link_hover_color;
+}
+.invert .link {
+	color: $invert_link_color;
+}
+.link:hover,
+.invert .link:hover {
+	color: $regular_link_color;
+}
+
+
+/* #Button Appearance Styles */
+.btn,
+.invert .btn {
+	color: $invert_accent_color_1;
+	background-color: $regular_accent_color_1;
+}
+.btn:hover {
+	color: $invert_link_hover_color;
+	background-color: $regular_accent_color_2;
+}
+
+.invert .btn:hover {
+	color: $regular_accent_color_2;
+	background-color: $invert_accent_color_1;
+}
+
+/* link-to-btn */
+.widget-carousel .swiper-slide .carousel__more-btn,
+.custom-posts .link {
+	color: $regular_link_hover_color;
+	background-color: $regular_accent_color_3;
+}
+.widget-carousel .swiper-slide .carousel__more-btn:hover,
+.custom-posts .link:hover {
+	color: $invert_link_hover_color;
+	background-color: $regular_accent_color_1;
+}
+
+/* invert link-to-btn */
+.about-author .about-author_btn {
+	color: $invert_link_hover_color;
+	background-color: $invert_link_color;
+}
+.about-author .about-author_btn:hover {
+	color: $invert_link_hover_color;
+	background-color: $regular_accent_color_2;
+}
+
+/* #Button post-btn */
+.post-btn.btn {
+	color: $invert_link_hover_color;
+	background-color: $invert_link_color;
+}
+.post-btn.btn:hover {
+	color: $regular_link_hover_color;
+	background-color: $regular_accent_color_3;
+}
+
+.error-404 .btn-secondary:hover {
+	color: $invert_link_color;
+	border-color: $invert_link_color;
+	background-color: transparent;
+}

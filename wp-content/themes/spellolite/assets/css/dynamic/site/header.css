@@ -1,0 +1,90 @@
+/* #Header */
+.header-container {
+	background-color: $header_bg_color;
+	background-repeat: $header_bg_repeat;
+	background-position: $header_bg_position_x top;
+	background-attachment: $header_bg_attachment;
+}
+
+/* ##Logo */
+.site-logo {
+	font-style: $header_logo_font_style;
+	font-weight: $header_logo_font_weight;
+	font-size: $header_logo_font_size{px};
+	font-family: @font_family( $header_logo_font_family );
+}
+
+.site-logo,
+.site-logo__link,
+.site-logo__link:hover {
+	color: $regular_accent_color_1;
+}
+
+.invert .site-logo,
+.invert .site-logo__link,
+.invert .site-logo__link:hover {
+	color: $invert_accent_color_1;
+}
+
+/* ##Top Panel */
+.top-panel {
+	background-color: $top_panel_bg;
+}
+
+.site-header-cart .cart-contents i {
+	color: @lighten($regular_text_color, 25%);
+}
+
+.invert .site-header-cart .cart-contents i {
+	color: $invert_text_color;
+}
+
+.site-header-cart .cart-contents:hover i,
+.invert .site-header-cart .cart-contents:hover i{
+	color: $regular_link_color;
+}
+
+@media (min-width: 768px) {
+	.contact-block__item:not(:last-child) {
+		border-color: $regular_text_color;
+	}
+	.invert .contact-block__item:not(:last-child) {
+		border-color: $invert_text_color;
+	}
+}
+@media (min-width: 768px) {
+	.top-panel .top-panel__left > *:not(:last-child),
+	.top-panel .top-panel__right > *:not(:last-child) {
+		border-color: $regular_text_color;
+	}
+	.top-panel.invert .top-panel__left > *:not(:last-child),
+	.top-panel.invert .top-panel__right > *:not(:last-child) {
+		border-color: $invert_text_color;
+	}
+}
+
+/*Contact block*/
+.site-header .contact-block__label {
+	color: $regular_accent_color_2;
+}
+.site-header .invert .contact-block__label {
+	color: $invert_accent_color_2;
+}
+.contact-block__icon {
+	color: $regular_accent_color_1;
+}
+.invert .contact-block__icon {
+	color: $invert_accent_color_1;
+}
+.contact-block__item a {
+	color: $regular_text_color;
+}
+.contact-block__item a:hover {
+	color: $regular_link_color;
+}
+.invert .contact-block__item a {
+	color: $invert_text_color;
+}
+.invert .contact-block__item a:hover {
+	color: $invert_link_color;
+}

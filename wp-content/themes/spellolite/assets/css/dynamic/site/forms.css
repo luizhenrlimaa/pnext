@@ -1,0 +1,167 @@
+/* #Fields */
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'],
+input[type='range'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='color'],
+select,
+textarea {
+	color: $regular_text_color;
+}
+
+/* #Search Form */
+.search-form__field {
+	color: $regular_text_color;
+}
+.invert .search-form__field {
+	color: $invert_accent_color_1;
+}
+.invert .search-form__field::-webkit-input-placeholder { color: $invert_accent_color_1; }
+.invert .search-form__field::-moz-placeholder { color: $invert_accent_color_1; }
+.invert .search-form__field:-moz-placeholder { color: $invert_accent_color_1; }
+.invert .search-form__field:-ms-input-placeholder { color: $invert_accent_color_1; }
+
+.search-form__input-wrap i,
+.search-form__toggle,
+.search-form__close,
+.header-search .search-submit {
+	color: $regular_link_color;
+}
+.search-form__toggle:hover,
+.search-form__close:hover,
+.header-search .search-submit:hover {
+	color: $regular_link_hover_color;
+}
+
+.invert .search-form__toggle,
+.invert .search-form__close,
+.invert .header-search .search-submit {
+	color: $invert_link_color;
+}
+.invert .search-form__toggle:hover,
+.invert .search-form__close:hover,
+.invert .header-search .search-submit:hover {
+	color: $invert_link_hover_color;
+}
+
+/*.top-panel.invert .search-form__field {	color: $invert_accent_color_1; }
+.top-panel.invert .search-form__field::-webkit-input-placeholder { color: $invert_text_color; }
+.top-panel.invert .search-form__field::-moz-placeholder { color: $invert_text_color; }
+.top-panel.invert .search-form__field:-moz-placeholder { color: $invert_text_color; }
+.top-panel.invert .search-form__field:-ms-input-placeholder { color: $invert_text_color; }
+.top-panel.invert .cherry-search__field { color: $invert_accent_color_1; }
+.top-panel.invert .cherry-search__field::-webkit-input-placeholder { color: $invert_text_color; }
+.top-panel.invert .cherry-search__field::-moz-placeholder { color: $invert_text_color; }
+.top-panel.invert .cherry-search__field:-moz-placeholder { color: $invert_text_color; }
+.top-panel.invert .cherry-search__field:-ms-input-placeholder { color: $invert_text_color; }*/
+
+.cherry-search__results-item a {
+	color: $regular_link_hover_color;
+}
+.cherry-search__results-item a:hover {
+	color: $regular_link_color;
+}
+.cherry-search__more-button {
+	color: $regular_link_hover_color;
+}
+
+/* #Comment, Contact, Password Forms */
+[class^="comment-form-"] i{
+	color: @lighten($regular_text_color, 25%);
+}
+.comment-form .submit,
+.wpcf7-submit,
+.post-password-form label + input {
+	color: $invert_link_color;
+	background-color: $regular_accent_color_1;
+	border-color: $regular_accent_color_1;
+}
+.comment-form .submit:hover,
+.wpcf7-submit:hover,
+.post-password-form label + input:hover {
+	color: $invert_link_color;
+	background-color: $regular_accent_color_2;
+	border-color: $regular_accent_color_2;
+}
+.comment-form .submit:active,
+.wpcf7-submit:active,
+.post-password-form label + input:active {
+	box-shadow: 0 0 10px $regular_accent_color_2;
+}
+
+.comment-form label {
+	color: $regular_accent_color_2;
+}
+.comment-metadata .fn {
+	color: $regular_accent_color_2;
+}
+.comment-metadata .comment-date {
+	color: $regular_link_color;
+}
+.comment-metadata .comment-date:hover {
+	color: $regular_link_hover_color;
+}
+.comment-form .comment-form__field,
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'],
+input[type='range'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='color'],
+select,
+textarea,
+.comment-form .comment-form__field:focus,
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='url']:focus,
+input[type='password']:focus,
+input[type='search']:focus,
+input[type='number']:focus,
+input[type='tel']:focus,
+input[type='range']:focus,
+input[type='date']:focus,
+input[type='month']:focus,
+input[type='week']:focus,
+input[type='time']:focus,
+input[type='datetime']:focus,
+input[type='datetime-local']:focus,
+input[type='color']:focus,
+select:focus,
+textarea:focus {
+	border-bottom: 2px solid $regular_accent_color_3;
+}
+
+/* #submit btn */
+.comment-form .submit, .wpcf7-submit, .post-password-form label + input {
+	color: $invert_link_hover_color;
+	background-color: $invert_link_color;
+}
+.comment-form .submit:hover, .wpcf7-submit:hover, .post-password-form label + input:hover {
+	color: $regular_link_hover_color;
+	background-color: $regular_accent_color_3;
+}
+
+/* #Input Placeholders */
+::-webkit-input-placeholder { color: $regular_text_color; }
+::-moz-placeholder          { color: $regular_text_color; }
+:-moz-placeholder           { color: $regular_text_color; }
+:-ms-input-placeholder      { color: $regular_text_color; }

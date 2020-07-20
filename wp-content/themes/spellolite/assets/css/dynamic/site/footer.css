@@ -1,0 +1,38 @@
+/* #Footer */
+.site-footer {
+	background-color: $footer_bg;
+}
+.footer-area-wrap {
+	background-color: $footer_widgets_bg;
+}
+
+.footer-container {
+	background-repeat: $footer_bg_repeat;
+	background-position: $footer_bg_position_x top;
+	background-attachment: $footer_bg_attachment;
+	background-size: $footer_bg_size;
+}
+
+.site-footer.style-2 .contact-block--footer {
+	font-style: $h5_font_style;
+	font-weight: $h5_font_weight;
+	font-size: $h5_font_size{px};
+	line-height: $h5_line_height;
+	font-family: @font_family( $h5_font_family );
+	letter-spacing: $h5_letter_spacing{em};
+}
+
+.site-footer.style-2 .contact-block--footer a {
+	color: $regular_link_color;
+}
+.site-footer.style-2 .contact-block--footer a:hover {
+	color: $regular_link_hover_color;
+}
+
+.site-footer.style-2 .invert .contact-block--footer a {
+	color: $invert_link_color;
+}
+.site-footer.style-2 .invert .contact-block--footer a:hover {
+	color: $invert_link_hover_color;
+}
+

@@ -1,0 +1,67 @@
+/* moto-tools-integration */
+.mti-event__title {
+	color: $invert_accent_color_1;
+	background-color: @alpha($regular_accent_color_1, 90%);
+}
+.mti-event__link:hover .mti-event__title {
+	background-color: $regular_accent_color_1;
+}
+.mti-event__schedule-column {
+	color: $regular_accent_color_2;
+}
+.mti-event__schedule-timeslot:before {
+	color: $regular_accent_color_1;
+}
+
+#tm_builder_outer_content .mti-timetable-events-schedule .mti-event__item .mti-event__participant-title a:hover {
+	color: $regular_link_hover_color;
+}
+
+body .mptt-shortcode-wrapper .mptt-shortcode-table tr td.mptt-shortcode-event > .mptt-event-container a.event-title,
+body .mptt-shortcode-wrapper .mptt-shortcode-table tr td.mptt-shortcode-event > .mptt-event-container,
+body .mptt-shortcode-wrapper .mptt-shortcode-table tr td.mptt-shortcode-event > .mptt-event-container:hover a.event-title,
+body .mptt-shortcode-wrapper .mptt-shortcode-table tr td.mptt-shortcode-event > .mptt-event-container:hover {
+	color:  $invert_accent_color_1;
+}
+body .mptt-shortcode-wrapper .mptt-shortcode-table tr td.mptt-shortcode-event > .mptt-event-container {
+	background-color: $regular_accent_color_1;
+}
+body .mptt-shortcode-wrapper .mptt-shortcode-table tr td.mptt-shortcode-event > .mptt-event-container:hover {
+	background-color: @lighten($regular_accent_color_1, 15%);
+}
+body .mptt-shortcode-wrapper table.mptt-shortcode-table tr td.mptt-shortcode-hours,
+body .mptt-shortcode-wrapper table.mptt-shortcode-table thead tr.mptt-shortcode-row th {
+	color: $regular_accent_color_2;
+	border-color: $regular_accent_color_3;
+	background-color: $regular_accent_color_3;
+}
+
+.single-mp-event .entry-header.invert .entry-sub-title {
+	color: $invert_accent_color_1;
+}
+.single-mp-event .entry-header .entry-title:before {
+	background-color: $regular_accent_color_1;
+}
+.single-mp-event .timeslots-title {
+	font-style: $h5_font_style;
+	font-weight: $h5_font_weight;
+	font-size: $h5_font_size{px};
+	line-height: $h5_line_height;
+	font-family: @font_family( $h5_font_family );
+	letter-spacing: $h5_letter_spacing{em};
+	text-align: $h5_text_align;
+	color: $regular_h5_color;
+}
+.single-mp-event .entry-header h3.entry-title,
+.single-mp-column .entry-header .entry-title {
+	font-style: $h2_font_style;
+	font-weight: $h2_font_weight;
+	font-size: $h2_font_size{px};
+	line-height: $h2_line_height;
+	font-family: @font_family( $h2_font_family );
+	letter-spacing: $h2_letter_spacing{em};
+	color: $regular_h2_color;
+}
+.single-mp-event .entry-header.has-post-thumbnail .post-thumbnail:before {
+	background-color: $regular_accent_color_2;
+}

@@ -1,0 +1,26 @@
+// Options
+$enable-rounded: false !default;
+
+$border__radius:            3px;
+$box__shadow:               0 2px 12px rgba(136,136,136,0.26);
+$box__shadow_mobile:        0 2px 6px rgba(136,136,136,0.26);
+
+$box__shadow_banner:        2px 2px 12px rgba(136,136,136,0.26);
+$box__shadow_banner_mobile: 2px 2px 6px rgba(136,136,136,0.26);
+
+$box__shadow_vertical_menu: 4px 4px 16px rgba(#000, .15);
+
+$size__site-main:           100%;
+$size__site-sidebar:        25%;
+
+$input__indents_y:          20.5px;
+$input__indents_x:          20px;
+
+$button__indents:           17px 29px;
+$button__indents_y:         17px;
+$button__indents_x:         29px;
+$button__border-radius:     0;
+$button__border:            none;
+$button__box-shadow:        none;
+
+$embed__ratio:              75.395%;  //  thumbnail height / thumbnail width

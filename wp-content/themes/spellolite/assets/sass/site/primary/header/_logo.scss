@@ -1,0 +1,14 @@
+.site-logo {
+	margin: 0;
+	line-height: 1;
+	&__link {
+		text-decoration: none;
+		line-height: 1;
+	}
+}
+.site-description {
+	@include font-size(.75);
+	.site-header.style-3 & {
+		text-align: center;
+	}
+}

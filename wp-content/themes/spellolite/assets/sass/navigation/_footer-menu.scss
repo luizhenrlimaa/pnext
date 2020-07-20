@@ -1,0 +1,36 @@
+.footer-menu {
+	&__items {
+		display: block;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		justify-content: center;
+
+		@include media-breakpoint-up(lg) {
+			justify-content: flex-start;
+			.site-footer.style-2 & {
+				justify-content: center;
+			}
+		}
+		.menu-item {
+			display: inline-block;
+			padding: 0;
+			text-transform: uppercase;
+			@include font-size(.75);
+			letter-spacing: .72px;
+			font-weight: 400;
+
+			align-items: flex-start;
+			@include media-breakpoint-up(lg) {
+				padding: .5em 1.5em;
+			}
+			a {
+				@include font-size(14/16);
+				text-transform: none;
+				font-weight: 700;
+				text-decoration: none;
+			}
+		}
+	}
+}

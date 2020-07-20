@@ -1,0 +1,27 @@
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 20px;
+	right: -999em;
+	overflow: hidden;
+	width: 47px;
+	height: 47px;
+	z-index: 999;
+	text-align: center;
+	@include border-radius(50%);
+	&:before{
+		content: "\f062";
+		font-family: FontAwesome;
+		line-height: 47px;
+		font-size: 24px;
+		width: 100%;
+	}
+	&:focus {
+		outline: 0;
+	}
+	@include media-breakpoint-up(md) {
+		right: 20px;
+		bottom: 80px;
+	}
+}

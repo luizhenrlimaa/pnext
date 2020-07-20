@@ -1,0 +1,42 @@
+#tm_builder_outer_content .tm_pb_module.tm_pb_button,
+#tm_builder_outer_content .tm_pb_module .tm_pb_button {
+	border-color: $regular_accent_color_1;
+	background-color: $regular_accent_color_1;
+	color: $invert_link_color;
+}
+#tm_builder_outer_content .tm_pb_button:hover{
+	background-color: $regular_accent_color_2;
+	border-color: $regular_accent_color_2;
+}
+
+#tm_builder_outer_content .tm_pb_button:after,
+#tm_builder_outer_content .tm_pb_button:hover:after{
+	color: $invert_link_color;
+}
+
+#tm_builder_outer_content .tm_pb_module.tm_pb_button,
+#tm_builder_outer_content .tm_pb_module .tm_pb_button,
+#tm_builder_outer_content .tm_pb_button.tm_pb_more_button {
+	background-color: $regular_accent_color_1;
+	color: $invert_link_hover_color;
+}
+#tm_builder_outer_content .tm_pb_button.tm_pb_more_button.tm_btn_2 {
+	color: $regular_link_hover_color;
+	background-color: $regular_accent_color_3;
+}
+#tm_builder_outer_content .tm_pb_button:hover,
+#tm_builder_outer_content .tm_pb_module .tm_pb_button:hover,
+#tm_builder_outer_content .tm_pb_button.tm_pb_more_button:hover,
+#tm_builder_outer_content .tm_pb_button.tm_pb_more_button.tm_btn_2:hover {
+	background-color: $regular_accent_color_2;
+	color: $invert_link_hover_color;
+}
+
+#tm_builder_outer_content .tm_pb_button:after,
+#tm_builder_outer_content .tm_pb_button:hover:after{
+	color: $invert_link_hover_color;
+}
+
+#tm_builder_outer_content .tm_pb_team_member .tm_pb_member_social_links a:hover {
+	color: $regular_link_hover_color;
+}

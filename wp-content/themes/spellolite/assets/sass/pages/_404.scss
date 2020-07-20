@@ -1,0 +1,49 @@
+/*--------------------------------------------------------------
+## 404
+--------------------------------------------------------------*/
+.not-found {
+	text-align: center;
+
+	&.error-404 {
+		margin: 100px 0;
+		@include media-breakpoint-up(md) {
+			margin: 130px 0 100px;
+		}
+
+		.btn {
+			margin-top: 35px;
+		}
+	}
+	&.no-results {
+		margin: 80px 0;
+		@include media-breakpoint-up(md) {
+			margin: 100px 0;
+		}
+	}
+
+	.page-title {
+		margin: 0 0 20px 0;
+		@include media-breakpoint-up(lg) {
+			margin: 0 0 35px 0;
+		}
+	}
+	.cherry-search{
+		max-width: 550px;
+		margin: 35px auto 0;
+		width: 100%;
+
+		&__form {
+			width: 100%;
+		}
+		&__results-list {
+			top: 55px;
+		}
+		&__field, &__field:focus {
+			border-bottom: 1px solid $color__white;
+		}
+	}
+}
+
+body.error404 .site-content{
+	background-size: cover;
+}

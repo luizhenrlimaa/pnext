@@ -1,0 +1,18 @@
+#tm_builder_outer_content .tm_pb_taxonomy .tm_pb_taxonomy__content:before {
+	background: $regular_accent_color_1;
+}
+#tm_builder_outer_content .tm_pb_taxonomy .tm_pb_taxonomy__inner:hover .tm_pb_taxonomy__content:before {
+	background-color: $regular_accent_color_2;
+}
+#tm_builder_outer_content .tm_pb_taxonomy.tm_pb_module .tm_pb_taxonomy__content:before {
+	background-color: @alpha($regular_accent_color_1, 80%);
+}
+#tm_builder_outer_content .tm_pb_taxonomy .tm_pb_taxonomy__content a,
+#tm_builder_outer_content .tm_pb_taxonomy .tm_pb_taxonomy__content .post-count,
+#tm_builder_outer_content .tm_pb_taxonomy .tm_pb_taxonomy__inner:hover .tm_pb_taxonomy__content a {
+	color: $invert_accent_color_1;
+}
+#tm_builder_outer_content .tm_pb_taxonomy .tm_pb_taxonomy__inner:hover .tm_pb_taxonomy__content a:hover {
+	color: @alpha($invert_accent_color_1, 60%);
+}
+	

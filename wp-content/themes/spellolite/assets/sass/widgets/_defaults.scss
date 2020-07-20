@@ -1,0 +1,250 @@
+.widget {
+	ul {
+		margin-bottom: 0;
+		padding: 0;
+		margin-left: 0;
+		list-style: none;
+
+		li {
+			& + li,
+			> ul li,
+			> ol li {
+				margin-top: 11px;
+			}
+			> ul {
+				margin-left: 10px;
+			}
+		}
+	}
+}
+
+.widget_archive,
+.widget_categories,
+.widget_pages,
+.widget_meta,
+.widget_rss,
+.widget_nav_menu,
+.widget_calendar,
+.widget_search,
+.widget_tag_cloud,
+.widget_recent_entries,
+.widget_recent_comments,
+.widget_text {
+	.full-width-header-area &,
+	.after-content-full-width-area & {
+		padding-left: $grid-gutter-width/2;
+		padding-right: $grid-gutter-width/2;
+	}
+}
+
+/*--------------------------------------------------------------
+## Widget Categories
+--------------------------------------------------------------*/
+.widget_categories {
+	ul li{
+		display: block;
+		.sidebar &,
+		.tm_pb_column_1_3 &,
+		.tm_pb_column_1_4 & {
+			padding-right: 0;
+			&:after {
+				content: none;
+			}
+		}
+	}
+}
+/*--------------------------------------------------------------
+## Widget Calendar
+--------------------------------------------------------------*/
+.widget_calendar {
+	table {
+		margin: 0 -10px;
+		table-layout: fixed;
+		width: 100%;
+		border-collapse: separate;
+		border-spacing: 10px;
+		border: none;
+		@include media-breakpoint-up(xl) {
+			border-spacing: 10px;
+		}
+		th,
+		td,
+		thead th,
+		tbody + tbody {
+			border: none;
+			text-align: center;
+		}
+	}
+	caption {
+		@include font-size(18/16);
+		line-height: 1.5;
+		font-weight: 600;
+		text-align: center;
+		margin: 0 10px;
+		padding: 12px 0;
+	}
+	th {
+		@include font-size(14/16);
+		line-height: 1.5;
+		font-weight: 700;
+		padding:3.35% 0 3.15%;
+	}
+	tbody td {
+		@include font-size(14/16);
+		line-height: 1.5;
+		padding: 3.35% 0 3.15%;
+		border-radius: 0;
+
+		&:not(#today):not(.pad) {
+			border: 1px solid $color__background-hr;
+			background: none;
+		}
+		&:not(.pad) {
+
+		}
+		a {
+			position: static;
+		}
+	}
+	tbody td {
+		position: relative;
+		@include font-size(14/16);
+		padding: 3.35% 0 3.15%;
+		text-align: center;
+		line-height: 1.5;
+
+		&:not(#today):not(.pad) {
+			border: 1px solid $color__background-hr;
+			background: none;
+		}
+
+		a {
+			display: block;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			@include border-radius();
+			color: inherit;
+		}
+	}
+	tbody tr td {
+		a {
+			border: none;
+			background: none;
+
+			&:hover {
+				background: none;
+			}
+		}
+	}
+	tfoot td {
+		padding-top: 5px;
+	}
+	#next {
+		text-align: right;
+	}
+}
+
+/*--------------------------------------------------------------
+## Widget Tag Cloud
+--------------------------------------------------------------*/
+.tagcloud {
+	margin: 0 -20px -10px 0;
+
+	a {
+		font-size: 14px !important;
+		line-height: 1.5;
+		display: inline-block;
+		margin: 0 20px 10px 0;
+		padding: 0px;
+		vertical-align: top;
+		text-decoration: none;
+		border: none;
+		@include border-radius;
+		@include media-breakpoint-up(lg) {
+			padding: 12.5px 19px;
+		}
+		&:hover {
+			background: none;
+		}
+		&:focus {}
+	}
+}
+
+/*--------------------------------------------------------------
+## Widget Recent Posts
+--------------------------------------------------------------*/
+.widget_recent_entries {
+	ul li {
+		& + li {
+			margin-top: 20px;
+		}
+		a {
+			@include font-size(18/16);
+			line-height: 1.5;
+			font-weight: 600;
+		}
+		.post-date {
+			@include font-size(14/16);
+			line-height: 1.5;
+			display: block;
+			font-style: normal;
+			margin-top: 6px;
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Widget Recent Comments
+--------------------------------------------------------------*/
+.widget_recent_comments {
+	ul li {
+		@include font-size(14/16);
+		line-height: 1.5;
+		font-weight: 300;
+		font-style: normal;
+		@extend .clear;
+
+		& + li {
+			margin-top: 20px;
+		}
+		.comment-author-link {
+			margin-right: 5px;
+			font-weight: 700;
+
+			& ~ a {
+				display: block !important;
+				margin-top: -2px !important;
+				@include font-size(18/16);
+				line-height: 1.5;
+				font-style: normal;
+				font-weight: 600;
+
+				&:before {
+					content: '';
+					display: block;
+					margin-top: 5px;
+				}
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+## Widget Search
+--------------------------------------------------------------*/
+.widget_search {
+	.sidebar & {
+		.widget-title {
+			margin-bottom: 1.42em;
+		}
+	}
+	&.widget {
+		padding: 50px 40px 40px;
+		border: none;
+	}
+	.search-form__submit {
+		background: none;
+	}
+}
