@@ -1,0 +1,1 @@
+Projeto desenvolvido para apresentação no curso de WordPress para a Next Step (Empresa Jr. de Sistemas de Informação - UFVJM)
